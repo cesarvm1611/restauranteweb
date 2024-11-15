@@ -1,0 +1,414 @@
+/* Estilos principales */
+/* Estilos para el fondo y la disposición del cuerpo de la página */
+
+body::before {
+    content: "";
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-spicy-hot-pot-white-chinese-chinese-cuisine-background-image_184572.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 10; /* Ajusta la opacidad si deseas que el fondo sea más oscuro */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.container, nav , footer {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.637); /* Fondo semitransparente para mejor contraste */
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    color: #ffffff;
+    padding: 40px 10px;
+    text-align: center;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Estilos para el efecto de superposición en el encabezado */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(46, 216, 46, 0);
+    z-index: 0;
+}
+
+/* Estilos para el título en el encabezado */
+header h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 10px;
+    font-size: 2em;
+    background-color: rgba(255, 30, 30, 0);
+}
+
+/* Estilos para el párrafo en el encabezado */
+header p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    text-align: center;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces en la barra de navegación al pasar el mouse */
+nav a:hover {
+    color: #bb2c2c;
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 80px auto 20px;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: -30px;
+   
+}
+
+/* Estilos para los títulos principales */
+h1,
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Estilos para los párrafos */
+p {
+    text-align: justify;
+    margin: 2 0;
+
+}
+
+/* Estilos adicionales */
+/* Estilos para la descripción */
+.description {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para destacar */
+.highlight {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para la galería de imágenes */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Estilos para las imágenes en la galería */
+.gallery img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+/* Estilos para las promociones */
+.promo {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Estilos para el horario de apertura */
+.opening-hours {
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Estilos para los días de la semana en el horario de apertura */
+.opening-hours h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #b69e9e59;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para el menú */
+/* Estilos para las categorías del menú */
+.category {
+    margin-bottom: 40px;
+    background-color: rgba(243, 243, 243, 0.89);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilos para los títulos de las categorías del menú */
+.category h3 {
+    color: #f00000f3;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+/* Estilos para las listas de elementos del menú */
+.category ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista del menú */
+.category li {
+    border-bottom: 5px solid #0044ff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el último elemento de la lista del menú */
+.category li:last-child {
+    border-bottom: none;
+}
+
+/* Estilos para los títulos de los elementos del menú */
+.category h4 {
+    color: #000000;
+    margin: 0;
+    flex: 1 1 60%;
+    font-size: 1.8em;
+}
+
+/* Estilos para los párrafos de los elementos del menú */
+.category p {
+    color: #000000;
+    margin: 5px 0;
+    flex: 1 1 60%;
+   
+
+    font-size: 1.5em;
+}
+
+/* Estilos para los párrafos de los elementos del menú */
+.category p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para las imágenes del menú */
+.menu-image {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+    flex: 1 1 30%;
+    object-fit: cover;
+}
+
+/* Estilos para la galería */
+/* Estilos para la disposición de la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Estilos para los elementos de la galería */
+.gallery-item {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+}
+
+/* Estilos para las imágenes de la galería */
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos al pasar el mouse sobre los elementos de la galería */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para los títulos de los elementos de la galería */
+.item-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    transition: bottom 0.3s ease;
+}
+
+/* Estilos al pasar el mouse sobre los títulos de los elementos de la galería */
+.gallery-item:hover .item-title {
+    bottom: -30px;
+}
+
+/* Estilos para los contenedores de video */
+.video-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Estilos para los subtítulos de los videos */
+.video-subtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los iframes de los videos */
+.video-iframe {
+    max-width: 100%;
+}
+
+/* Estilos para las promociones */
+/* Estilos para el contenedor de las promociones */
+#promociones {
+    margin-top: 40px;
+}
+
+/* Estilos para la disposición de las promociones */
+.promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+/* Estilos para los elementos de las promociones */
+.promotion-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos al pasar el mouse sobre los elementos de las promociones */
+.promotion-item:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para los títulos de las promociones */
+.promotion-item h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ff0000;
+    font-size: 1.5em;
+}
+
+/* Estilos para los párrafos de las promociones */
+.promotion-item p {
+    margin: 0;
+    color: #333;
+    font-size: 1.3em;
+}
+
+/* Estilos para las imágenes de las promociones */
+.promotion-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos al pasar el mouse sobre las imágenes de las promociones */
+.promotion-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilos para la portada */
+/* Estilos para el contenedor de la portada */
+#portada {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Estilos para el título de la portada */
+#portada h1 {
+    color: #0080ff;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el párrafo de la portada */
+#portada p {
+    color: #000000;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la información de contacto en la portada */
+.contact-info {
+    background-color: rgba(204, 134, 134, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los párrafos en la información de contacto */
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
